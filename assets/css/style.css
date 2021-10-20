@@ -1,0 +1,89 @@
+.bg-col {
+    background-color: #f96855;
+}
+
+.color {
+    color: #f96855;
+}
+
+.gr-container {
+    box-sizing: border-box;
+    height: 100vh;
+}
+
+.gr6x5 {
+    display: grid;
+    height: 100%;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 10px;
+}
+
+.gr-item {
+    background-color: #f96855;
+    color: #c4c4c4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    background-size: cover;
+    background-position: top left;
+    transition: all ease-in-out 300ms;
+    position: relative;
+    z-index: 10;
+}
+
+.gr-item:hover {
+    color: white;
+    text-shadow: 0 0 5px rgba(0,0,0,0.85);
+}
+
+.gr-item.gr1x1 {
+    grid-row: span 1;
+    grid-column: span 1;
+}
+
+.gr-item.gr2x2 {
+    grid-row: span 2;
+    grid-column: span 2;
+}
+
+.gr-item.gr3x3 {
+    grid-row: span 3;
+    grid-column: span 3;
+}
+
+.gr-item.gr3x2 {
+    grid-row: span 3;
+    grid-column: span 2;
+}
+
+.gr-item.gr2x3 {
+    grid-row: span 2;
+    grid-column: span 3;
+}
+
+.two {
+    background-image: url(//unsplash.it/800/600);
+}
+
+.two::before {
+    content:'';
+    display:block;
+    background: black;
+    opacity: 0.8;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transition: all ease-in-out 300ms;
+    z-index: -1;
+}
+
+.two:hover::before {
+    opacity: 0.2;
+}
+
+
+
